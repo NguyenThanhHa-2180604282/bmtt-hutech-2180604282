@@ -30,7 +30,7 @@ while True:
             ID = int(input())
             qlsv.updateSinhVien(ID)
         else:
-            print("\nSanh sạch sinh vien trong!")
+            print("\nDanh sach sinh vien trong!")
 
     elif key == 3:
         if qlsv.soLuongSinhVien() > 0:
@@ -52,27 +52,27 @@ while True:
             name = input()
             searchResult = qlsv.findByName(name)
             qlsv.showSinhVien(searchResult)
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
         else:
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
 
     elif key == 5:
         if qlsv.soLuongSinhVien() > 0:
             print("\n5. Sap xep sinh vien theo diem trung binh (GPA).")
             qlsv.sortByDiemTB()
             qlsv.showSinhVien(qlsv.getListSinhVien())
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
         else:
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
 
     elif key == 6:
         if qlsv.soLuongSinhVien() > 0:
             print("\n6. Sap xep sinh vien theo ten.")
             qlsv.sortByName()
             qlsv.showSinhVien(qlsv.getListSinhVien())
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
         else:
-            print("\nSanh sách sinh vien trong!")
+            print("\nDanh sách sinh vien trong!")
 
     elif key == 7:
         if qlsv.soLuongSinhVien() > 0:
