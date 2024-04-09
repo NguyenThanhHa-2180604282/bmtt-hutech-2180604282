@@ -22,8 +22,9 @@ class CaesarCipher:
         for letter in text:
             letter_index = self.alphabet.index(letter)
             output_index = (letter_index - key) % alphabet_len
+            # Ensure the output_index is positive
+            if output_index < 0:
+                output_index += alphabet_len
             output_letter = self.alphabet[output_index]
             decrypted_text.append(output_letter)
         return "".join(decrypted_text)
-    
-            
